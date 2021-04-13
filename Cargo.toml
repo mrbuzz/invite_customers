@@ -1,0 +1,19 @@
+[package]
+name = "invite_customers"
+version = "0.1.0"
+authors = ["Giorgio Gambino <gambino.giorgio@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+clap = { version = "2.33.3", features = ["yaml"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+[dev-dependencies]
+assert_cmd = "0.10"
+predicates = "1.0.7"
+tempfile = "3"
+same-file = "1.0.6"

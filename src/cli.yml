@@ -1,0 +1,21 @@
+name: invite_customers
+version: "0.1.0"
+author: Giorgio G.
+about: Computes a list of customers within a given distance from the Dublin office
+args:
+    - INPUT:
+        help: Sets the input file to use
+        required: true
+        index: 1
+    - output:
+        help: Sets an optional output file, if not specified defaults to stdout.
+        short: o
+        long: output
+        value_name: FILE
+        takes_value: true
+    - range:
+        help: Sets the exclusion range in kilometers.
+        short: r
+        long: range
+        value_name: KM
+        takes_value: true
